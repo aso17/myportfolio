@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgb(51, 98, 160)!important;
+  color: rgb(51, 98, 160) !important;
 }
+
 body {
   font-family: sans-serif;
   overflow-x: hidden;
@@ -17,10 +18,12 @@ nav {
   align-items: center;
   height: 50px;
 }
+
 .logo {
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -33,6 +36,7 @@ nav ul li a {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+
 nav ul li a:hover {
   color: white;
 }
@@ -44,6 +48,7 @@ nav ul li a:hover {
   justify-content: space-between;
   position: relative;
 }
+
 .toggle-menu input {
   position: absolute;
   opacity: 0;
@@ -53,27 +58,33 @@ nav ul li a:hover {
   cursor: pointer;
   z-index: 3;
 }
+
 /* animation burger */
 .toggle-menu span:nth-child(2) {
   transform-origin: 0 0;
   transition: all 0.5s;
 }
-.toggle-menu input:checked ~ span:nth-child(2) {
+
+.toggle-menu input:checked~span:nth-child(2) {
   transform: rotate(45deg) translate(-2px, -2px);
   background-color: rgb(18, 101, 209);
 }
+
 .toggle-menu span:nth-child(4) {
   transition: all 0.5s;
   transform-origin: 0 100%;
 }
-.toggle-menu input:checked ~ span:nth-child(4) {
+
+.toggle-menu input:checked~span:nth-child(4) {
   background-color: rgb(51, 98, 160);
   transform: rotate(-45deg) translate(0px, 0px);
 }
-.toggle-menu input:checked ~ span:nth-child(3) {
+
+.toggle-menu input:checked~span:nth-child(3) {
   opacity: 0;
   transform: scale(0);
 }
+
 .toggle-menu span {
   display: block;
   width: 30px;
@@ -87,6 +98,7 @@ nav ul li a:hover {
     width: 50%;
   }
 }
+
 /* ukuran mobile */
 @media screen and (max-width: 576px) {
   nav ul {
@@ -99,7 +111,7 @@ nav ul li a:hover {
     height: 100vh;
     align-items: center;
     z-index: 2;
-    background-color: rgba(221, 211, 211, 0.5);
+    background-color: rgba(89, 83, 83, 0.5);
     transform: translateX(100%);
     transition: all 0.5s;
     opacity: 0;
@@ -109,6 +121,7 @@ nav ul li a:hover {
     display: flex;
     /* overflow-x: hidden; */
   }
+
   nav ul.slide {
     transform: translateX(0);
     transition: all 0.5s;
